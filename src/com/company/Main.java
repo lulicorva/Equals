@@ -10,6 +10,13 @@ public class Main {
 
         System.out.println((personaA.equals(personaB)));
 
+        Coca coca1 = new Coca(4,1.20);
+        Coca coca2 = new Coca(4,2.20);
+
+        System.out.println(coca1.equals(coca2));
+        //Me da true porque lo estoy comparando por tamaño en la CLASE COCA con el equals
+
+
     }
 
 
