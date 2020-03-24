@@ -8,7 +8,7 @@ public class Main {
         Persona personaB = new Persona("Lorena", 38852);
 
 
-        System.out.println((personaA==personaB));
+        System.out.println((personaA.equals(personaB)));
 
     }
 
