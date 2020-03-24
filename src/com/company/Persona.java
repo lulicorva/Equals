@@ -20,13 +20,14 @@ public class Persona {
         return dni;
     }
 
-
     @Override
     public boolean equals(Object objetoAComparar) {
-        if(objetoAComparar instanceof Persona){
-            return((Persona)objetoAComparar).getDni().equals(this.getDni());
+        Persona unaPersona = (Persona) objetoAComparar;
+        if(unaPersona.getDni().equals(((Persona) objetoAComparar).getDni())){
+            return true;
+        } else {
+            return false;
         }
-        return false;
     }
 
     @Override
